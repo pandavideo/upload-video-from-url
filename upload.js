@@ -9,7 +9,7 @@ const folder_id = null; // (optional) | obs: The folder you wanna put your video
 const video_id = uuidv4(); // (optional) | obs: You can put an especific uuid for your video, or let it generate one.
 const title = "video name"; // (optional) | obs: title is your video name
 const description = "video description"; // (optional)
-const url = "https://.."; // (required) | url is an external video url
+const url = "https://.."; // (required) | obs: url is an external video url
 
 const uploadVideo = async () => {
   try {
