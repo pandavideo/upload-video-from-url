@@ -18,6 +18,8 @@
   "homepage": "https://github.com/pandavideo/upload-video-from-external-url#readme",
   "dependencies": {
     "axios": "^1.2.1",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "websocket-as-promised": "^2.0.1",
+    "ws": "^8.11.0"
   }
 }
