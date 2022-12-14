@@ -56,7 +56,13 @@ const uploadVideo = async () => {
             .then(() => {
               wsp.onMessage.addListener((data) => {
                 const obj = JSON.parse(data.toString("utf8"));
-                console.log("Upload status: " + obj.action);
+                console.log(
+                  `Upload status: ${obj.action} ${
+                    obj.action === "progress"
+                      ? Math.floor(obj.payload.progress) + "%"
+                      : ""
+                  }`
+                );
                 if (obj.action === "success") {
                   resolve(true);
                   wsp.close();
