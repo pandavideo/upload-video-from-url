@@ -2,7 +2,7 @@ const axios = require("axios");
 const { v4: uuidv4 } = require("uuid");
 
 // Header
-const API_KEY = "API_KEY";
+const API_KEY = "API_KEY"; // (required)
 
 // Body
 const folder_id = null; // (optional) | obs: The folder you wanna put your video
